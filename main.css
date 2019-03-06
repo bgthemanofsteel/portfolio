@@ -107,7 +107,23 @@ nav >i {
 .slide0 {
     background: rgb(253, 42, 27);
     height: 90vh;
-    display: none;
+    /* display: none; */
+}
+/* .info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} */
+.about{
+    width:80%;
+    margin:auto;
+}
+.gregorys{
+    width:60%;
+    margin-top:1rem;
+}
+.slide0 img{
+    width:80%;
 }
 
 
@@ -193,9 +209,10 @@ nav >i {
 
 /* SLIDE3 */
 .slide3 {
-	/* display: none; */
+	display: none;
     background-color: #22D6FF;
     height: 90vh;
+    margin: auto;
 }
 .slide3 ul{
     list-style-type: none;
@@ -242,12 +259,17 @@ footer .links{
     ul >li >a >.icon >.fas:last-child{
         display: none;
     }
+
+    .slide3 img{
+        display: none;
+    }
 }
 
 
 
 
 @media only screen and (min-width:920px){
+    /* HEADER */
     header ul{
         transform: translate(-30%, -70%);
         display: flex;
@@ -259,9 +281,7 @@ footer .links{
         list-style: none;
     }
     header ul li{
-        
         text-align: center;
-        /* display: block; */
         font-size: 1rem;
         color: black;
         border-right: 1px solid lightgray;
@@ -272,17 +292,10 @@ footer .links{
         display: block;
     }
     header ul li a .icon{
-        /* width: 2.5rem; */
-        /* height: 2.5rem; */
         text-align: center;
         overflow: hidden;
-        /* margin: 0 auto 0.625rem; */
     }
     header ul li a .icon .fas{
-        /* width: 100%; */
-        /* height: 100%; */
-        /* line-height: 2.5rem; */
-        /* font-size: 2.125rem; */
         transition: 0.5s;
         color: #000;
     }
@@ -305,28 +318,95 @@ footer .links{
         /* position: relative; */
         color: #000;
         font-size: 1.125rem;
-        line-height: 1.25rem;
+        line-height: 1.5rem;
         transition: 0.5s;
     }
     header ul li a .name span:before{
         content: attr(data-text);
         position: absolute;
-        top: -50%;
+        top: -90%;
         left: 0;
         width: 100%;
         height: 100%;
         color: rgb(253, 42, 27);
     }
     header ul li a:hover .name span{
-        transform: translateY(1rem);
+        transform: translateY(16px);
     }
 
-
+    /* SLIDE */
     .slide{
         text-align: center;
         color: white;
         width: 100%;
         height: 80vh;
         transition: transform 1s;
+    }
+
+
+    /* SLIDE0 */
+    .slide0{
+        height: 90vh;
+    }
+    .about{
+        width:80%;
+        margin:auto;
+        height: 90vh;
+    }
+    .gregorys{
+        width:50%;
+        margin-top:1rem;
+    }
+    .slide0 img{
+        width:50%;
+    }
+
+
+    /* SLIDE1 */
+    .info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .slide1 h2{
+        width:80%;
+        margin: auto;
+        text-align: left;
+        font-weight: bold;
+    }
+    .slide1 li{
+        width: 80%;
+        margin: auto;
+        text-align: left;
+        color: white;
+        border-right: none;
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+    .familypic{
+        width:40%;
+        margin:2rem auto;
+    }
+    .slide1 img{
+        width:90%;
+    }
+
+
+    /* SLIDE3 */
+    .contact{
+        display: flex;
+    } 
+    .contactBtns{
+        width: 40%;
+        margin: 0;
+    }
+    .jakepic{
+        width:45%;
+        margin-top: 2rem;
+
+    }
+    .slide3 img{
+        width:50%;
+
     }
 }
