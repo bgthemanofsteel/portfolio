@@ -13,32 +13,32 @@ body{
 }
 header{
     background-color:white;
-    margin-top: 1rem;
     margin-bottom: 0;
-    width: 100%;
+    width:100%;
 }
 
 header ul{
     display: flex;
     justify-content: center;
+    margin: auto;
+    padding: 1rem ;
     list-style: none;
 }
-ul li{
+header ul li{
     padding: 0 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    /* margin: auto; */
+    margin: auto;
     text-align: center;
     color: black;
     border-right: 1px solid lightgray;
 }
-ul li a .icon{
-    /* width: 1rem; */
+header ul li a .icon{
     height: 1.5rem;
     text-align: center;
     margin: 0 auto 0.625rem;
 }
-ul li a .icon .fas{
+header ul li a .icon .fas{
     width: 100%;
     height: 100%;
     line-height: 1.5rem;
@@ -46,10 +46,8 @@ ul li a .icon .fas{
     transition: 0.5s;
     color: #000;
 }
-ul li a .icon .fas:last-child{
-    /* display: none; */
-}
-ul li a .name span{
+
+header ul li a .name span{
     font-size: .625rem;
     width: 100%;
     color: #000;
@@ -59,16 +57,15 @@ ul li a .name span{
 .slides{
     display: flex;
     flex-direction: column;
-    height: calc(100% - 100px);
     width: 100%;
     font-family: 'Raleway', sans-serif;
 }
-nav {
+/* nav {
 	font-size: 3rem;
 
 	position: absolute;
 	left: 47%;
-	top: 80%;
+	top: 70%;
 	color: white;
 	z-index: 100;
 }
@@ -77,191 +74,233 @@ nav >i {
 	opacity: 0.2;
 
 	transition: all 0.5s;
-}
+} */
+
+
+/* SLIDE */
 .slide{
-    background-color: grey;
     text-align: center;
     color: white;
     width: 100%;
+    height: 100%;
     transition: transform 1s;
-    height: 80;
 }
-.slide h1 {
+
+.slide h1{
 	font-size: 4rem;
 	font-weight: bold;
     padding-top: 1.25rem;
-    margin: 0;
+    margin:0;
 }
 .slide h2 {
 	text-align: center;
 	color: white;
 	font-size: 1.5rem;
     font-weight: 100;
+}		
+.title{
+    margin-top:0.625rem;
 }
 
+
+/* SLIDE0 */
 .slide0 {
     background: rgb(253, 42, 27);
+    height: 90vh;
     display: none;
+}
 
-}		
+
+/* SLIDE1 */
 .slide1 {
-	/* display: none; */
+	display: none;
     background-color: #00ADD5;
 }
-.slide1 h2, ol, ul{
+.info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.familypic{
+    width:80%;
+    margin-top:1rem;
+}
+.slide1 img{
+    width:100%;
+}
+.slide1 h2{
     width: 80%;
     margin: auto;
     text-align: left;
-    padding-bottom: .625rem;
+    font-weight: bold;
 }
-.slide1 img{
+.slide1 li {
     width: 80%;
+    margin: auto;
+    text-align: left;
+    color: white;
+    border-right: none;
+	line-height: 1.5rem;
 }
+
+
+/* SLIDE2 */
 .slide2{
     display: none;
-	background-color: #22D6FF;
+    background-color: #5C6983;
+
+    height: 90vh;
 }
 .quiz{
     border-radius: 5px;
-    width:80%;
-    margin:auto;
+    width: 80%;
+    margin: 0 auto 0.625rem;
     text-align: left;
-    background-color: white;
-    color: #00ADD5;
-    padding: .625rem;
+    background-color: lightgray;
+    color: #5C6983;
+    padding: 0.625rem;
 }
 .quiz h2{
-    color: #00ADD5;
+    color: crimson;
     text-align: left;
     font-weight: bold;
 }
 .quiz img{
-    width: 100%;
+    width:100%;
 }
-.github{
-    border: 1px solid black;
+.githubBtn{
+    border: 1px solid #5C6983;
     border-radius: 5px;
-    color: black;
     background-color: white;
     padding: .5rem;
 }
-.site{
-    border: 1px solid black;
+.siteBtn{
+    border: 1px solid #5C6983;
     border-radius: 5px;
-    color:white;
-    background-color: black;
+    color: white;
+    background-color: #5C6983;
     padding: .5rem;
 }
-.site a{
+.githubBtn a{
+    color: #5C6983;
+    text-decoration: none;
+}
+.siteBtn a{
     color: white;
     text-decoration: none;
 }
-.github a{
-    color: black;
-    text-decoration: none;
-}
-.slide3 {
-	display: none;
-    background-color: lightgray;
-}
 
+
+/* SLIDE3 */
+.slide3 {
+	/* display: none; */
+    background-color: #22D6FF;
+    height: 90vh;
+}
 .slide3 ul{
     list-style-type: none;
-    margin-top: 4rem;
+    margin-top:4rem;
 }
 .slide3 ul a{
-    margin-top: .05rem;
+    /* margin-top: 1rem; */
+    text-decoration: none;
+
 }
 .slide3 ul li{
-    color: #000;
-    border: 1px solid gray;
+    color: white;;
+    border: 1px solid white;;
     border-radius: 5px;
-    padding: 0.625rem;
+    padding: .625rem;
     width: 10rem;
-    margin: auto;
+    margin: 1rem auto;
 }
 
 
+/* FOOTER */
 footer{
     background-color:white;
-    padding: 1.25rem;
+    /* padding: 1.25rem; */
     display: flex;
-    height: 3.125rem;
+    /* height: 3.125rem; */
     justify-content: flex-end;
-    width: 100%;
+    width:100%;
 }
 footer .links{
     flex-direction: row;
     font-size: 2rem;
+    opacity: 0.3;
 }
-.links a{
-    /* align-content: flex-end; */
+.links >a{
     padding: .5rem;
-    color: #000;
+    color: black;
 }
+
+
+
+
+@media only screen and (max-width:920px){
+    ul >li >a >.icon >.fas:last-child{
+        display: none;
+    }
+}
+
 
 
 
 @media only screen and (min-width:920px){
-    header >ul{
-        /* position: absolute;
-        top: 50%;
-        left: 50%; */
-        transform: translate(-50%, -50%);
+    header ul{
+        transform: translate(-30%, -70%);
         display: flex;
         justify-content: center;
         width: 5%;
-        margin: auto;
-        /* padding: 1.2rem ; */
-        /* height: 3rem; */
+        margin: 30px auto 0;
+        padding-top:1.2rem;
+        height: 3rem;
         list-style: none;
     }
-    ul >li{
+    header ul li{
         
         text-align: center;
         /* display: block; */
-        font-size: 2rem;
+        font-size: 1rem;
         color: black;
         border-right: 1px solid lightgray;
     }
-    ul >li :last-child{
-        border-right: none;
-    }
-    ul >li >a{
+    header ul li a{
         text-decoration: none;
         padding: 0 3.125rem;
         display: block;
     }
-    ul >li >a >.icon{
-        width: 2.5rem;
-        height: 2.5rem;
+    header ul li a .icon{
+        /* width: 2.5rem; */
+        /* height: 2.5rem; */
         text-align: center;
         overflow: hidden;
-        margin: 0 auto 0.625rem;
+        /* margin: 0 auto 0.625rem; */
     }
-    ul >li >a >.icon >.fas{
-        width: 100%;
-        height: 100%;
-        line-height: 2.5rem;
-        font-size: 2.125rem;
+    header ul li a .icon .fas{
+        /* width: 100%; */
+        /* height: 100%; */
+        /* line-height: 2.5rem; */
+        /* font-size: 2.125rem; */
         transition: 0.5s;
         color: #000;
     }
-    ul >li >a >.icon >.fas:last-child{
+    header ul li a .icon .fas:last-child{
         color:rgb(253, 42, 27);
     }
-    ul >li >a:hover >.icon >.fas{
+    header ul li a:hover .icon .fas{
         transform: translateY(-100%);
         transition: 0.5s;
     }
-    ul >li >a >.name{
+    header ul >li >a >.name{
         /* position: relative; */
         height: 1.25rem;
         width: 100%;
         display: block;
         overflow: hidden;
     }
-    ul >li >a >.name >span{
+    header ul li a .name span{
         display: block;
         /* position: relative; */
         color: #000;
@@ -269,16 +308,25 @@ footer .links{
         line-height: 1.25rem;
         transition: 0.5s;
     }
-    ul >li >a >.name >span:before{
+    header ul li a .name span:before{
         content: attr(data-text);
         position: absolute;
-        top: -100%;
+        top: -50%;
         left: 0;
         width: 100%;
         height: 100%;
         color: rgb(253, 42, 27);
     }
-    ul >li >a:hover >.name >span{
-        transform: translateY(1.25rem);
+    header ul li a:hover .name span{
+        transform: translateY(1rem);
+    }
+
+
+    .slide{
+        text-align: center;
+        color: white;
+        width: 100%;
+        height: 80vh;
+        transition: transform 1s;
     }
 }
