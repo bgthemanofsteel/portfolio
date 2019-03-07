@@ -59,24 +59,41 @@ header ul li a .name span{
     width: 100%;
     font-family: 'Raleway', sans-serif;
 }
-/* nav {
+
+/* NAV BUTTONS */
+.prev {
 	font-size: 3rem;
 
 	position: absolute;
-	left: 47%;
+	left: 2%;
 	top: 70%;
 	color: white;
 	z-index: 100;
 }
-nav >i {
+.prev >i {
 	cursor: pointer;
 	opacity: 0.2;
 
 	transition: all 0.5s;
-} */
+}
+.next {
+	font-size: 3rem;
+
+	position: absolute;
+	left: 92%;
+	top: 70%;
+	color: white;
+	z-index: 100;
+}
+.next >i {
+	cursor: pointer;
+	opacity: 0.2;
+
+	transition: all 0.5s;
+}
 
 
-/* GENERIC SLIDE */
+/* ALL SLIDES */
 .slide{
     text-align: center;
     color: white;
