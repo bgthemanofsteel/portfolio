@@ -76,7 +76,7 @@ header ul li a .name span{
 }
 .prev >i {
 	cursor: pointer;
-	opacity: 0.2;
+	opacity: 0.4;
 
 	transition: all 0.5s;
 }
@@ -91,7 +91,7 @@ header ul li a .name span{
 }
 .next >i {
 	cursor: pointer;
-	opacity: 0.2;
+	opacity: 0.4;
 
 	transition: all 0.5s;
 }

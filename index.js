@@ -1,42 +1,54 @@
 let number = 0;
 
 $('.menu0').on('click', function(){
+    $('.slide' + number).slideUp();
+    $('.menu' + number).removeClass('current');
     $('.slide0').slideDown();
-    $('.slide1').hide();
-    $('.slide2').hide();
-    $('.slide3').hide();
+    $(".menu0").addClass('current');
     number =0;
 })
 
 $('.menu1').on('click', function(){
-    $('.slide0').hide();
-    $('.slide2').hide();
-    $('.slide3').hide();
+    $('.slide' + number).slideUp();
+    $('.menu' + number).removeClass('current');
     $('.slide1').slideDown();
+    $(".menu1").addClass('current');
     number = 1;
 })
 
 $('.menu2').on('click', function(){
-    $('.slide0').hide();
-    $('.slide1').hide();
-    $('.slide3').hide();
+    $('.slide' + number).slideUp();
+    $('.menu' + number).removeClass('current');
     $('.slide2').slideDown();
+    $(".menu2").addClass('current');
     number =2;
 })
 
 $('.menu3').on('click', function(){
-    $('.slide0').hide();
-    $('.slide1').hide();
-    $('.slide2').hide();
+    $('.slide' + number).slideUp();
+    $('.menu' + number).removeClass('current');
     $('.slide3').slideDown();
+    $(".menu3").addClass('current');
     number = 3;
 })
 
 
 
 $('.next').on('click', function(){
-    $('.slide' + number).animate({width:'toggle'},500).delay(2000);
+    $('.slide' + number).slideUp();
     $('.menu' + number).removeClass('current');
-    $('.slide' + (number +1)).animate({width:'toggle'},500).delay(2000);
-    $('.menu' + (number+1)).removeClass('current');
+    $('.slide' + (number +1)).slideDown();
+    $('.menu' + (number+1)).addClass('current');
+
+    if (number === 3){
+        $(".slide3").slideUp();
+        $(".menu3").removeClass('current');
+        $(".slide0").slideDown();
+        $(".menu0").addClass('current');
+        $("#next").css('transform', 'rotate(180deg)');
+
+        number = -1;
+    }
+
+    number += 1;
 })
