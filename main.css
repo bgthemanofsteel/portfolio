@@ -104,7 +104,7 @@ nav >i {
 /* SLIDE0 "HOME"*/
 .slide0 {
     background: rgb(253, 42, 27);
-    height: 90%;
+    height: 80vh;
     /* display: none; */
 }
 /* .info{
@@ -252,6 +252,15 @@ footer .links{
 
 
 
+@media only screen and (min-width:568px){
+    .slide{
+        height: 80%;
+    }
+}
+
+
+
+
 
 @media only screen and (max-width:920px){
     ul >li >a >.icon >.fas:last-child{
@@ -349,20 +358,22 @@ footer .links{
 
     /* SLIDE0 */
     .slide0{
-        height: 90%;
+        height: 80vh;
     }
     
     .about{
         width:90%;
         margin:auto;
+        display: flex;
+        align-items: center;
+        height: 90%;
     }
-    .gregorys{
+    .gregorypic{
         width:50%;
-        margin-top:1rem;
+        margin-top:3rem;
     }
     .slide0 img{
-        width:80%;
-        margin-bottom:1rem;
+        width:100%;
     }
 
 
