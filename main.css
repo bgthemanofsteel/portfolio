@@ -76,12 +76,12 @@ nav >i {
 } */
 
 
-/* GENERIC SLIDE */
+/* ALL SLIDES */
 .slide{
     text-align: center;
     color: white;
     width: 100%;
-    height: 100%;
+    /* height: 90vh; */
     transition: transform 1s;
 }
 .slide h1{
@@ -163,7 +163,7 @@ nav >i {
 .slide2{
     display: none;
     background-color: #5C6983;
-    height: 90%;
+    height: 90vh;
 }
 .quiz{
     border-radius: 5px;
@@ -209,7 +209,7 @@ nav >i {
 .slide3 {
 	display: none;
     background-color: #22D6FF;
-    height: 90%;
+    height: 90vh;
     margin: auto;
 }
 .slide3 ul{
@@ -256,9 +256,67 @@ footer .links{
     .slide{
         height: 80%;
     }
+
 }
 
 
+
+@media only screen and (max-width:667px){
+    .slide3 img, .slide1 img{
+        display: none;
+    }
+}
+
+
+
+@media only screen and (min-width:736px){
+    /* SLIDE1 ABOUT */
+    .info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .familypic{
+        width:40%;
+        margin:2rem auto;
+    }
+    .slide1 img{
+        width:90%;
+    }
+
+    /* SLIDE2 PROJECTS */
+    .slide2{
+        height: 90%;
+        display: flex;
+        /* flex-direction: row-reverse; */
+    }
+    .projects{
+        flex:1;
+    }
+    .quiz{
+        width: 50%;
+        margin:2rem;
+    }
+
+
+    /* SLIDE3 CONTACT */
+    .contact{
+        display: flex;
+    } 
+    .contactBtns{
+        width: 40%;
+        margin: 0;
+    }
+    .jakepic{
+        width:45%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .slide3 img{
+        width:50%;
+
+    }
+}
 
 
 
@@ -267,9 +325,7 @@ footer .links{
         display: none;
     }
 
-    .slide3 img{
-        display: none;
-    }
+    
 }
 
 
