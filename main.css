@@ -9,7 +9,6 @@ body{
 	padding: 0;
 	width: 100%;
     height: 100%;
-    word-wrap: break-word;
 }
 header{
     background-color:white;
@@ -106,7 +105,7 @@ nav >i {
 /* SLIDE0 */
 .slide0 {
     background: rgb(253, 42, 27);
-    height: 90vh;
+    height: 90%;
     /* display: none; */
 }
 /* .info{
@@ -131,6 +130,7 @@ nav >i {
 .slide1 {
 	display: none;
     background-color: #00ADD5;
+    height: 90%;
 }
 .info{
     display: flex;
@@ -164,8 +164,7 @@ nav >i {
 .slide2{
     display: none;
     background-color: #5C6983;
-
-    height: 90vh;
+    height: 90%;
 }
 .quiz{
     border-radius: 5px;
@@ -211,7 +210,7 @@ nav >i {
 .slide3 {
 	display: none;
     background-color: #22D6FF;
-    height: 90vh;
+    height: 90%;
     margin: auto;
 }
 .slide3 ul{
@@ -342,27 +341,36 @@ footer .links{
         height: 80vh;
         transition: transform 1s;
     }
-
+    .slide h1{
+        font-size: 7rem;
+    }
+    .slide h2{
+        font-size: 2rem;
+    }
 
     /* SLIDE0 */
     .slide0{
-        height: 90vh;
+        height: 90%;
     }
+    
     .about{
-        width:80%;
+        width:90%;
         margin:auto;
-        height: 90vh;
     }
     .gregorys{
         width:50%;
         margin-top:1rem;
     }
     .slide0 img{
-        width:50%;
+        width:80%;
+        margin-bottom:1rem;
     }
 
 
     /* SLIDE1 */
+    .slide1{
+        height: 90%;
+    }
     .info{
         display: flex;
         flex-direction: row;
@@ -392,7 +400,29 @@ footer .links{
     }
 
 
+    /* SLIDE2 */
+    .slide2{
+        height: 90%;
+        display: flex;
+    }
+    .projects{
+        flex:1;
+    }
+    .quiz{
+        width: 50%;
+        margin:2rem;
+    }
+    .quiz img{
+        /* width:30%; */
+        /* margin: auto; */
+
+    }
+    
+    
     /* SLIDE3 */
+    .slide3{
+        height: 90%;
+    }
     .contact{
         display: flex;
     } 
@@ -403,7 +433,7 @@ footer .links{
     .jakepic{
         width:45%;
         margin-top: 2rem;
-
+        margin-bottom: 1rem;
     }
     .slide3 img{
         width:50%;
