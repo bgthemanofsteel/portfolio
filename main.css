@@ -76,7 +76,7 @@ nav >i {
 } */
 
 
-/* SLIDE */
+/* GENERIC SLIDE */
 .slide{
     text-align: center;
     color: white;
@@ -84,7 +84,6 @@ nav >i {
     height: 100%;
     transition: transform 1s;
 }
-
 .slide h1{
 	font-size: 4rem;
 	font-weight: bold;
@@ -102,7 +101,7 @@ nav >i {
 }
 
 
-/* SLIDE0 */
+/* SLIDE0 "HOME"*/
 .slide0 {
     background: rgb(253, 42, 27);
     height: 90%;
@@ -126,7 +125,7 @@ nav >i {
 }
 
 
-/* SLIDE1 */
+/* SLIDE1 "ABOUT"*/
 .slide1 {
 	display: none;
     background-color: #00ADD5;
@@ -160,7 +159,7 @@ nav >i {
 }
 
 
-/* SLIDE2 */
+/* SLIDE2 "PROJECTS"*/
 .slide2{
     display: none;
     background-color: #5C6983;
@@ -206,7 +205,7 @@ nav >i {
 }
 
 
-/* SLIDE3 */
+/* SLIDE3 "CONTACT"*/
 .slide3 {
 	display: none;
     background-color: #22D6FF;
@@ -404,6 +403,7 @@ footer .links{
     .slide2{
         height: 90%;
         display: flex;
+        /* flex-direction: row-reverse; */
     }
     .projects{
         flex:1;
