@@ -32,6 +32,10 @@ header ul li{
     color: black;
     border-right: 1px solid lightgray;
 }
+header ul li a{
+    padding: 0 1rem;
+}
+
 header ul li a .icon{
     height: 1.5rem;
     text-align: center;
@@ -107,11 +111,6 @@ nav >i {
     height: 80vh;
     /* display: none; */
 }
-/* .info{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-} */
 .about{
     width:80%;
     margin:auto;
@@ -130,6 +129,9 @@ nav >i {
 	display: none;
     background-color: #00ADD5;
     height: 90%;
+}
+.bio{
+    margin-top:1rem;
 }
 .info{
     display: flex;
@@ -251,12 +253,28 @@ footer .links{
 }
 
 
+@media only screen and (min-width: 480px){
+    header ul li a{
+        padding: 0 2rem;
+    }
+}
+
 
 @media only screen and (min-width:568px){
+    header ul li a{
+        padding: 0 3rem;
+    }
+
     .slide{
         height: 80%;
     }
 
+}
+
+@media only screen and (min-width:636px){
+    header ul li a{
+        padding: 0 3.5rem;
+    }
 }
 
 
@@ -302,6 +320,7 @@ footer .links{
     /* SLIDE3 CONTACT */
     .contact{
         display: flex;
+        align-items: center;
     } 
     .contactBtns{
         width: 40%;
@@ -462,7 +481,7 @@ footer .links{
         margin:2rem auto;
     }
     .slide1 img{
-        width:90%;
+        width:50%;
     }
 
 
