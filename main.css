@@ -56,7 +56,6 @@ header ul li a .name span{
     color: #000;
 }
 
-
 .slides{
     display: flex;
     flex-direction: column;
@@ -66,16 +65,12 @@ header ul li a .name span{
 
 /* NAV BUTTONS */
 .next {
-	font-size: 3rem;
-    /* position: -webkit-sticky; */
+	font-size: 4rem;
     position: fixed;
-    /* align-self: flex-start; */
-
 	left: 50%;
-	top: 85%;
-	color: black;
+	top: 80%;
+	color: white;
     z-index: 100;
-    
 }
 .next >i {
 	cursor: pointer;
@@ -459,14 +454,13 @@ footer .links{
     /* SLIDE1 */
     .slide1{
         height: 90%;
-        font-size: 5rem;
     }
     .info{
         display: flex;
         flex-direction: row;
     }
     .slide1 h2{
-        width:40%;
+        width:80%;
         margin: auto;
         text-align: left;
         font-weight: bold;
@@ -475,7 +469,7 @@ footer .links{
         flex:1;
     }
     .bio li{
-        width: 40%;
+        width: 80%;
         margin: auto;
         text-align: left;
         color: white;
@@ -484,11 +478,10 @@ footer .links{
         font-size: 1.5rem;
     }
     .familypic{
-        width: 40%;
-        flex:1;
+        width: 20%;
     }
     .familypic img{
-        height: 50%;
+        height: 30%;
     }
 
 
@@ -502,7 +495,7 @@ footer .links{
         flex:1;
     }
     .quiz{
-        width: 50%;
+        width: 40%;
         margin:2rem;
     }
     .quiz img{
