@@ -65,34 +65,21 @@ header ul li a .name span{
 }
 
 /* NAV BUTTONS */
-.prev {
-	font-size: 3rem;
-
-	position: absolute;
-	left: 2%;
-	top: 70%;
-	color: white;
-	z-index: 100;
-}
-.prev >i {
-	cursor: pointer;
-	opacity: 0.4;
-
-	transition: all 0.5s;
-}
 .next {
 	font-size: 3rem;
+    /* position: -webkit-sticky; */
+    position: fixed;
+    /* align-self: flex-start; */
 
-	position: absolute;
-	left: 92%;
-	top: 70%;
-	color: white;
-	z-index: 100;
+	left: 50%;
+	top: 85%;
+	color: black;
+    z-index: 100;
+    
 }
 .next >i {
 	cursor: pointer;
 	opacity: 0.4;
-
 	transition: all 0.5s;
 }
 
@@ -125,7 +112,7 @@ header ul li a .name span{
 /* SLIDE0 "HOME"*/
 .slide0 {
     background: rgb(253, 42, 27);
-    height: 80vh;
+    height: 90vh;
     /* display: none; */
 }
 .about{
@@ -296,7 +283,7 @@ footer .links{
 
 
 
-@media only screen and (max-width:667px){
+@media only screen and (max-width:668px){
     .slide3 img, .slide1 img{
         display: none;
     }
@@ -472,20 +459,23 @@ footer .links{
     /* SLIDE1 */
     .slide1{
         height: 90%;
+        font-size: 5rem;
     }
     .info{
         display: flex;
         flex-direction: row;
-        align-items: center;
     }
     .slide1 h2{
-        width:80%;
+        width:40%;
         margin: auto;
         text-align: left;
         font-weight: bold;
     }
-    .slide1 li{
-        width: 80%;
+    .bio{
+        flex:1;
+    }
+    .bio li{
+        width: 40%;
         margin: auto;
         text-align: left;
         color: white;
@@ -494,11 +484,11 @@ footer .links{
         font-size: 1.5rem;
     }
     .familypic{
-        width:40%;
-        margin:2rem auto;
+        width: 40%;
+        flex:1;
     }
-    .slide1 img{
-        width:50%;
+    .familypic img{
+        height: 50%;
     }
 
 
@@ -526,8 +516,14 @@ footer .links{
     .slide3{
         height: 90%;
     }
+    .info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
     .contact{
         display: flex;
+
     } 
     .contactBtns{
         width: 40%;
