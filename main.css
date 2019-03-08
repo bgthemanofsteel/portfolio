@@ -108,7 +108,6 @@ header ul li a .name span{
 .slide0 {
     background: rgb(253, 42, 27);
     height: 90vh;
-    /* display: none; */
 }
 .about{
     width:80%;
@@ -286,7 +285,7 @@ footer .links{
 
 
 
-@media only screen and (min-width:736px){
+@media only screen and (min-width:731px){
     /* SLIDE1 ABOUT */
     .info{
         display: flex;
@@ -337,6 +336,208 @@ footer .links{
 }
 
 
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    .slide{
+        text-align: center;
+        color: white;
+        width: 100%;
+        height: 80vh;
+        transition: transform 1s;
+    }
+
+     /* SLIDE1 */
+     .slide1{
+        height: 90%;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    .slide1 h2{
+        width:80%;
+        margin: auto;
+        text-align: left;
+        font-weight: bold;
+    }
+    .bio{
+        flex:1;
+    }
+    .bio li{
+        width: 80%;
+        margin: auto;
+        text-align: left;
+        color: white;
+        border-right: none;
+        line-height: 2rem;
+        font-size: 1.25rem;
+    }
+    .familypic{
+        flex:1;
+    }
+    .familypic img{
+        height: 30%;
+    }
+
+
+    /* SLIDE2 */
+    .slide2{
+        /* height: 90vh; */
+        /* margin: auto; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .projects{
+        flex:0;
+    }
+    .quiz{
+        width: 80%;
+        /* margin-top:0; */
+    }
+
+    /* SLIDE3 */
+    .slide3{
+        height: 80%;
+    }
+    .info{
+        /* display: flex; */
+        
+    }
+    .contact{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    } 
+    .contactBtns{
+        width: 100%;
+    }
+
+    .contactBtns li{
+        font-size: 1.5rem;
+        align-items: center;
+    }
+    .jakepic{
+        width:50%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .slide3 img{
+        width:80%;
+
+    }
+}
+
+
+
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    .slide{
+        height: 90vh;
+    }
+ 
+    /* SLIDE0 */
+    .about{
+        width:80%;
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+        width:80%;
+    }
+    .gregorypic{
+        width:80%;
+        /* margin-top:3rem; */
+    }
+    .gregorypic img{
+        width:200%;
+    }
+
+
+     /* SLIDE1 */
+     .slide1{
+        height: 90vh;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    .slide1 h2{
+        width:80%;
+        margin: auto;
+        text-align: left;
+        font-weight: bold;
+    }
+    .bio{
+        flex:1;
+    }
+    .bio li{
+        width: 80%;
+        margin: auto;
+        text-align: left;
+        color: white;
+        border-right: none;
+        line-height: 2rem;
+        font-size: 1.25rem;
+    }
+    .familypic{
+        flex:1;
+    }
+    .familypic img{
+        height: 30%;
+    }
+
+
+    /* SLIDE2 */
+    .slide2{
+        height: 90vh;
+        /* margin: auto; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .projects{
+        flex:0;
+    }
+    .quiz{
+        width: 80%;
+        margin-top:0;
+    }
+
+    /* SLIDE3 */
+    .slide3{
+        height: 80%;
+    }
+    .info{
+        /* display: flex; */
+        
+    }
+    .contact{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    } 
+    .contactBtns{
+        width: 100%;
+    }
+
+    .contactBtns li{
+        font-size: 1.5rem;
+        align-items: center;
+    }
+    .jakepic{
+        width:50%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .slide3 img{
+        width:80%;
+
+    }
+}
 
 @media only screen and (max-width:920px){
     ul >li >a >.icon >.fas:last-child{
@@ -487,7 +688,8 @@ footer .links{
 
     /* SLIDE2 */
     .slide2{
-        height: 90%;
+        display: none;
+        height: 90vh;
         display: flex;
         /* flex-direction: row-reverse; */
     }
@@ -507,7 +709,7 @@ footer .links{
     
     /* SLIDE3 */
     .slide3{
-        height: 90%;
+        height: 80vh;
     }
     .info{
         display: flex;
