@@ -301,8 +301,10 @@ footer .links{
     }
 
     /* SLIDE2 PROJECTS */
-    /* .slide2{
+    .slide2{
         height: 90%;
+    }
+    .container{
         display: flex;
     }
     .projects{
@@ -311,7 +313,7 @@ footer .links{
     .quiz{
         width: 50%;
         margin:2rem;
-    } */
+    }
 
 
     /* SLIDE3 CONTACT */
