@@ -301,10 +301,9 @@ footer .links{
     }
 
     /* SLIDE2 PROJECTS */
-    .slide2{
+    /* .slide2{
         height: 90%;
         display: flex;
-        /* flex-direction: row-reverse; */
     }
     .projects{
         flex:1;
@@ -312,7 +311,7 @@ footer .links{
     .quiz{
         width: 50%;
         margin:2rem;
-    }
+    } */
 
 
     /* SLIDE3 CONTACT */
@@ -336,7 +335,7 @@ footer .links{
 }
 
 
-
+/* IPAD PORTRAIT */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
     .slide{
         text-align: center;
@@ -382,12 +381,11 @@ footer .links{
 
     /* SLIDE2 */
     .slide2{
-        /* height: 90vh; */
-        /* margin: auto; */
-        display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: center; */
+    }
+    .container{
+        display:flex;
     }
     .projects{
         flex:0;
@@ -430,7 +428,7 @@ footer .links{
 }
 
 
-
+/* IPAD PRO PORTRAIT*/
 @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
     .slide{
         height: 90vh;
@@ -445,14 +443,14 @@ footer .links{
         align-items: center;
     }
     .title{
-        width:80%;
+        /* width:80%; */
     }
     .gregorypic{
+        flex:1;
         width:80%;
-        /* margin-top:3rem; */
     }
     .gregorypic img{
-        width:200%;
+        /* width:200%; */
     }
 
 
@@ -539,17 +537,17 @@ footer .links{
     }
 }
 
+
+
 @media only screen and (max-width:920px){
     ul >li >a >.icon >.fas:last-child{
         display: none;
     }
-
-    
 }
 
 
 
-
+/* DESKTOPS */
 @media only screen and (min-width:920px){
     /* HEADER */
     header ul{
@@ -690,8 +688,9 @@ footer .links{
     .slide2{
         display: none;
         height: 90vh;
+    }
+    .container{
         display: flex;
-        /* flex-direction: row-reverse; */
     }
     .projects{
         flex:1;
@@ -699,11 +698,6 @@ footer .links{
     .quiz{
         width: 40%;
         margin:2rem;
-    }
-    .quiz img{
-        /* width:30%; */
-        /* margin: auto; */
-
     }
     
     
