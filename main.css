@@ -67,7 +67,7 @@ header ul li a .name span{
 .next {
 	font-size: 4rem;
     position: fixed;
-	left: 50%;
+	left: 45%;
 	top: 80%;
 	color: white;
     z-index: 100;
@@ -215,6 +215,7 @@ header ul li a .name span{
 .slide3 ul{
     list-style-type: none;
     margin-top:4rem;
+    padding-left: 0;
 }
 .slide3 ul a{
     /* margin-top: 1rem; */
@@ -222,8 +223,8 @@ header ul li a .name span{
 
 }
 .slide3 ul li{
-    color: white;;
-    border: 1px solid white;;
+    color: white;
+    border: 1px solid white;
     border-radius: 5px;
     padding: .625rem;
     width: 10rem;
@@ -236,7 +237,6 @@ footer{
     background-color:white;
     /* padding: 1.25rem; */
     display: flex;
-    /* height: 3.125rem; */
     justify-content: flex-end;
     width:100%;
 }
