@@ -589,7 +589,6 @@ footer .links{
         transition: 0.5s;
     }
     header ul >li >a >.name{
-        /* position: relative; */
         height: 1.25rem;
         width: 100%;
         display: block;
@@ -597,7 +596,6 @@ footer .links{
     }
     header ul li a .name span{
         display: block;
-        /* position: relative; */
         color: #000;
         font-size: 1.125rem;
         line-height: 1.5rem;
@@ -616,7 +614,7 @@ footer .links{
         transform: translateY(16px);
     }
 
-    /* SLIDE */
+    /* ALL SLIDES */
     .slide{
         text-align: center;
         color: white;
@@ -631,7 +629,7 @@ footer .links{
         font-size: 2rem;
     }
 
-    /* SLIDE0 */
+    /* SLIDE0 "HOME"*/
     .slide0{
         height: 80vh;
     }
@@ -652,7 +650,7 @@ footer .links{
     }
 
 
-    /* SLIDE1 */
+    /* SLIDE1 "ABOUT"*/
     .slide1{
         height: 90%;
     }
@@ -661,8 +659,7 @@ footer .links{
         flex-direction: row;
     }
     .slide1 h2{
-        width:80%;
-        margin: auto;
+        width:60%;
         text-align: left;
         font-weight: bold;
     }
@@ -670,23 +667,21 @@ footer .links{
         flex:1;
     }
     .bio li{
-        width: 80%;
-        margin: auto;
+        width: 60%;
         text-align: left;
         color: white;
-        border-right: none;
-        line-height: 2rem;
-        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-size: 1.25rem;
     }
     .familypic{
-        width: 20%;
+        width: 30%;
     }
     .familypic img{
-        height: 30%;
+        width: 80%;
     }
 
 
-    /* SLIDE2 */
+    /* SLIDE2 "PROJECTS"*/
     .slide2{
         display: none;
         height: 90vh;
@@ -703,15 +698,11 @@ footer .links{
     }
     
     
-    /* SLIDE3 */
+    /* SLIDE3 "CONTACT"*/
     .slide3{
         height: 80vh;
     }
-    .info{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
+
     .contact{
         display: flex;
 
